@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commanda:
+    - echo "This is build phase... Zipping my webpage"
+
+    post-build:
+    commands:
+    - echo "Deployed to S3"
+artifacts:
+  files:
+  - '**/*'
